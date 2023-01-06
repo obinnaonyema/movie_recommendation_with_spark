@@ -1,0 +1,28 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "movie_recommendation_pipeline",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"UserForRec": "677"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/rawdata/blobs/movies",
+			"blobPathEndsWith": ".csv",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/25fddf78-49bd-4798-a7e1-a09b001af9bb/resourceGroups/movie_recommend/providers/Microsoft.Storage/storageAccounts/moviedata983940",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

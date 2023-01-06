@@ -1,0 +1,9 @@
+{
+	"name": "movierec-adf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "2375c701-d29f-43fe-878b-150ee97a3f62",
+		"tenantId": "4f7ac3d6-b41a-47bc-baee-18d61c17d91c"
+	}
+}
